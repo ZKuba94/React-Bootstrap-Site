@@ -1,3 +1,4 @@
+import {useState} from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,19 +12,23 @@ import {
     HouseDoor,
     FileEarmark
 } from "react-bootstrap-icons";
-import Profile from "./Components/Profile";
+import Profile from "./Profile";
 
 function Navbar1() {
+    const [show,setShow] = useState(false)
+    const handleClose = () => setShow(false)
+    const handleShow = () => setShow(true)
     return (
         <>
             <Navbar fixed="top" key={'lg'} bg="dark" variant="dark" expand={'lg'}>
                 <Container fluid>
                     <Navbar.Brand href="#">
-                        {/*<i className="bi bi-bootstrap"></i>*/}
                         <Bootstrap/>&nbsp;My React Bootstrap Portfolio
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${'lg'}`}/>
+                    <Navbar.Toggle onClick={handleShow} aria-controls={`offcanvasNavbar-expand-${'lg'}`}/>
                     <Navbar.Offcanvas
+                        show={show}
+                        onHide={handleClose}
                         id={`offcanvasNavbar-expand-${'lg'}`}
                         aria-labelledby={`offcanvasNavbarLabel-expand-${'lg'}`}
                         placement="start"
@@ -38,12 +43,12 @@ function Navbar1() {
                         <Profile/>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3 gap-2 gap-lg-0">
-                                <Nav.Link href="#action1"><HouseDoor/>&nbsp;Home</Nav.Link>
-                                <Nav.Link href="#action2"><Person/>&nbsp;About Me</Nav.Link>
-                                <Nav.Link href="#action3"><FileEarmark/>&nbsp;Resume</Nav.Link>
-                                <Nav.Link href="#action4"><PostcardFill/>&nbsp;Portfolio</Nav.Link>
-                                <Nav.Link href="#action5"><PersonVcard/>&nbsp;Testimonials</Nav.Link>
-                                <Nav.Link href="#action6"><EnvelopePaper/>&nbsp;Contact</Nav.Link>
+                                <Nav.Link onClick={handleClose} href="#app"><HouseDoor/>&nbsp;Home</Nav.Link>
+                                <Nav.Link onClick={handleClose} href="#aboutme"><Person/>&nbsp;About Me</Nav.Link>
+                                <Nav.Link onClick={handleClose} href="#resume"><FileEarmark/>&nbsp;Resume</Nav.Link>
+                                <Nav.Link onClick={handleClose} href="#portfolio"><PostcardFill/>&nbsp;Portfolio</Nav.Link>
+                                <Nav.Link onClick={handleClose} href="#testimonials"><PersonVcard/>&nbsp;Testimonials</Nav.Link>
+                                <Nav.Link onClick={handleClose} href="#contact"><EnvelopePaper/>&nbsp;Contact</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
