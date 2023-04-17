@@ -42,8 +42,8 @@ function Navbar1() {
                         </Offcanvas.Header>
                         <Profile/>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3 gap-2 gap-lg-0">
-                                <Nav.Link onClick={handleClose} href="#app"><HouseDoor/>&nbsp;Home</Nav.Link>
+                            <Nav id="nav" className="justify-content-end flex-grow-1 pe-3 gap-2 gap-lg-0">
+                                <Nav.Link onClick={handleClose} href="#header"><HouseDoor/>&nbsp;Home</Nav.Link>
                                 <Nav.Link onClick={handleClose} href="#aboutme"><Person/>&nbsp;About Me</Nav.Link>
                                 <Nav.Link onClick={handleClose} href="#resume"><FileEarmark/>&nbsp;Resume</Nav.Link>
                                 <Nav.Link onClick={handleClose} href="#portfolio"><PostcardFill/>&nbsp;Portfolio</Nav.Link>

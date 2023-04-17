@@ -58,7 +58,7 @@ function Resume() {
                                     ipsa
                                     numquam dolor ducimus cum necessitatibus aut rem facere. Magnam, ipsa enim!</p>
                             </div>
-                            <div className="resume-item ps-4 mb-5 position-relative">
+                            <div className="resume-item ps-4 mb-1 position-relative">
                                 <h4 className="fw-bold">Programming</h4>
                                 <Badge variant="primary" className="p-2 mb-2">2022</Badge>
                                 <p className="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.

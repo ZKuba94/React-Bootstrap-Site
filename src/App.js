@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
     return (
         <div className="App" id="app">
-            <header>
+            <header id="header">
                 <Navbar1/>
                 <Hero/>
             </header>

@@ -16,7 +16,7 @@ function Numbers() {
                             enim provident neque amet eveniet natus eum.</p>
                     </Row>
                     <Row>
-                        <Col md={6} lg={3} className="my-4">
+                        <Col md={6} lg={3} className="mt-4 mb-1">
                             <div className="d-flex align-items-start">
                                 <EmojiSmile className="fs-1"/>
                                 <div className="ps-2">
@@ -28,7 +28,7 @@ function Numbers() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={6} lg={3} className="my-4">
+                        <Col md={6} lg={3} className="mt-4 mb-1">
                             <div className="d-flex align-items-start">
                                 <Postcard className="fs-1"/>
                                 <div className="ps-2">
@@ -40,7 +40,7 @@ function Numbers() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={6} lg={3} className="my-4">
+                        <Col md={6} lg={3} className="mt-4 mb-1">
                             <div className="d-flex align-items-start">
                                 <CodeSlash className="fs-1"/>
                                 <div className="ps-2">
@@ -52,7 +52,7 @@ function Numbers() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={6} lg={3} className="my-4">
+                        <Col md={6} lg={3} className="mt-4 mb-1">
                             <div className="d-flex align-items-start">
                                 <Airplane className="fs-1"/>
                                 <div className="ps-2">

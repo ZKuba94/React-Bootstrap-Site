@@ -80,7 +80,7 @@ function AboutMe() {
                                     </Col>
                                 </ListGroup>
                             </Row>
-                            <p className="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                            <p className="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
                                 corporis et exercitationem. Eligendi provident, id praesentium magni amet obcaecati
                                 assumenda eveniet,
                                 incidunt, perspiciatis dicta dolorum odit excepturi voluptatem? Eos tempora velit quo
