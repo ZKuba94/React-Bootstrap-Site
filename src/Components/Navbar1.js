@@ -13,11 +13,11 @@ import {
     FileEarmark
 } from "react-bootstrap-icons";
 import Profile from "./Profile";
+import {useBoolean} from "../hooks/useBoolean";
 
 function Navbar1() {
-    const [show,setShow] = useState(false)
-    const handleClose = () => setShow(false)
-    const handleShow = () => setShow(true)
+    const [show, handleOpen, handleClose] = useBoolean();
+
     return (
         <>
             <Navbar fixed="top" key={'lg'} bg="dark" variant="dark" expand={'lg'}>
@@ -25,7 +25,7 @@ function Navbar1() {
                     <Navbar.Brand href="#">
                         <Bootstrap/>&nbsp;My React Bootstrap Portfolio
                     </Navbar.Brand>
-                    <Navbar.Toggle onClick={handleShow} aria-controls={`offcanvasNavbar-expand-${'lg'}`}/>
+                    <Navbar.Toggle onClick={handleOpen} aria-controls={`offcanvasNavbar-expand-${'lg'}`}/>
                     <Navbar.Offcanvas
                         show={show}
                         onHide={handleClose}
